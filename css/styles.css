@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.woff');
+    src: url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.woff2') format('woff2'),
+         url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.woff') format('woff'),
+         url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.ttf') format('truetype'),
+         url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  height: 128px;
+  text-align: center;
+  background-color: red;
+}
+
+header {
+  width: 100%;
+  height: 128px;
+  background: blue;
+  text-align: center;
+}
+
+.logo {
+  width: 259px;
+  height: 108px;
+  background-color: #FFFFFF;
+  position: relative;
+  left: 140px;
+  top: 5px;
+}
+.logo img {
+  width: 93px;
+  height: 108px;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+h1 {
+  font-size: 37px;
+  text-align: right;
+  position: absolute;
+  right: 1px;
+  top: 10px;
+}
+h1 p:first-child {
+  text-transform:lowercase;
+  font-family: Calibri;
+  color: #fb9c06;
+}
+h1 p:last-child {
+  text-transform:uppercase;
+  letter-spacing: 0.02em;
+  font-family: 'Bebas', 'Helvetica', sans-serif;
+  color: #6e6d6b;
+}
+
+nav{
+  position: relative;
+  width: 567px; /*1-113*5-1*/
+}
+nav a {
+  position: absolute;
+}
+nav div {
+  height: 84px;
+  width: 72px;
+  border: 2px solid #000000;
+  overflow: hidden;
+}
+nav div:hover {
+  border-color: #fb9c06;
+}
+
+.label {
+  position: relative;
+  top: 54px;
+}
+
+
+
+
+main {
+  background-color: yellow;
+}
+
+
+.slider {
+  height: 406px;
+  background-color: #fb9c06;
+}
