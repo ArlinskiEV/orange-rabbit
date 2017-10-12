@@ -10,12 +10,22 @@
 
 @font-face {
     font-family: 'Bebas';
-    src: url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.woff');
+    src: url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.woff2');
     src: url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.woff2') format('woff2'),
          url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.woff') format('woff'),
          url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.ttf') format('truetype'),
          url('../fonts/Bebas-fontfacekit/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri/calibri.woff2');
+    src: url('../fonts/Calibri/calibri.woff2') format('woff2'),
+         url('../fonts/Calibri/calibri.woff') format('woff'),
+         url('../fonts/Calibri/calibri.ttf') format('truetype'),
+         url('../fonts/Calibri/calibri.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -63,15 +73,20 @@ h1 {
 }
 h1 p:first-child {
   text-transform:lowercase;
-  letter-spacing: 0.7pt;
+  letter-spacing: 0.8pt;
   font-family: 'Calibri';
   color: #fb9c06;
+  position: relative;
+  top: 1px;
+  right: 3px;
 }
 h1 p:last-child {
   text-transform:uppercase;
   letter-spacing: 0.02em;
   font-family: 'Bebas', 'Helvetica', sans-serif;
   color: #6e6d6b;
+  position: relative;
+  top: -2px;
 }
 
 nav{
@@ -92,6 +107,9 @@ nav figure {
 }
 nav figure:hover {
   border-color: rgba(251,156,6,1);
+}
+nav figure:last-child {
+  clear: right;
 }
 
 figure > a {
@@ -117,7 +135,7 @@ nav figcaption {
 }
 
 
-/*class for navigation*/
+/*navigation*/
 .home .icon {
   background-position: -1px -2px;
 }
@@ -134,7 +152,9 @@ nav figcaption {
   width: 111px;
   background-position: -453px -2px;
 }
-
+.home figcaption {
+  left: -25px;
+}
 
 
 main {
