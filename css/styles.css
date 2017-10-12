@@ -3,6 +3,9 @@
   padding: 0;
   border: 0;
   text-decoration: none;
+  -moz-box-sizing: border-box; /* Для Firefox */
+  -webkit-box-sizing: border-box; /* Для Safari и Chrome */
+  box-sizing: border-box; /* Для IE и Opera */
 }
 
 @font-face {
@@ -23,10 +26,12 @@
   height: 128px;
   text-align: center;
   background-color: red;
+  position: relative;
 }
 
 header {
   width: 100%;
+  /*width: 1600px;*/
   height: 128px;
   background: blue;
   text-align: center;
@@ -37,8 +42,9 @@ header {
   width: 259px;
   height: 108px;
   background-color: #FFFFFF;
-  position: relative;
-  left: 140px;
+
+  position: absolute;
+  left: 16px;
   top: 5px;
 }
 .logo img {
@@ -69,27 +75,65 @@ h1 p:last-child {
 }
 
 nav{
-  position: relative;
-  width: 567px; /*1-113*5-1*/
-}
-nav a {
   position: absolute;
-}
-nav div {
+  width: 567px; /*1-113*5-1*/
   height: 84px;
-  width: 72px;
-  border: 2px solid #000000;
-  overflow: hidden;
-}
-nav div:hover {
-  border-color: #fb9c06;
+  right: 5px;
+  top: 18px;
 }
 
-.label {
+nav figure {
+  height: 84px;
+  width: auto;
+  border: 2px solid rgba(251,156,6,0.5);/*alpha = 0 for transparent*/
+  /*overflow: hidden;*/
+  float: left;
   position: relative;
-  top: 54px;
+}
+nav figure:hover {
+  border-color: rgba(251,156,6,1);
 }
 
+figure > a {
+     display: block;
+     height: 100%;
+     width: 100%;
+     position: absolute;
+}
+
+figure > div {/*temp*/
+  width: 109px;
+  height: inherit;
+}
+
+nav figcaption {
+  font-family: 'Calibri';
+  font-size: 22px;
+  color: rgba(158,155,155,1);
+  position: relative;
+  top: -26px;
+}
+
+
+/*class for navigation*/
+.home {
+  /**/
+}
+.about {
+  /**/
+}
+.work {
+  /**/
+}
+.blog {
+  /**/
+}
+.contact {
+  /**/
+}
+.contact div {
+  width: 111px;
+}
 
 
 
