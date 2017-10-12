@@ -86,7 +86,7 @@ nav figure {
   height: 84px;
   width: auto;
   border: 2px solid rgba(251,156,6,0.5);/*alpha = 0 for transparent*/
-  /*overflow: hidden;*/
+  overflow: hidden;
   float: left;
   position: relative;
 }
@@ -101,9 +101,11 @@ figure > a {
      position: absolute;
 }
 
-figure > div {/*temp*/
+.icon {
   width: 109px;
   height: inherit;
+  background: url(../img/navigation.png) no-repeat;
+  background-position: 0 0px;
 }
 
 nav figcaption {
@@ -116,29 +118,29 @@ nav figcaption {
 
 
 /*class for navigation*/
-.home {
-  /**/
+.home .icon {
+  background-position: -1px -2px;
 }
-.about {
-  /**/
+.about .icon {
+  background-position: -114px -2px;
 }
-.work {
-  /**/
+.work .icon {
+  background-position: -227px -2px;
 }
-.blog {
-  /**/
+.blog .icon {
+  background-position: -340px -2px;
 }
-.contact {
-  /**/
-}
-.contact div {
+.contact .icon {
   width: 111px;
+  background-position: -453px -2px;
 }
 
 
 
 main {
   background-color: yellow;
+  position: relative;
+  top: 128px;
 }
 
 
