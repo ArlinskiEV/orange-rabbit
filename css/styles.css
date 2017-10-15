@@ -213,18 +213,19 @@ h2:last-child {
 /*four textareas*/
 .content .wrapper {
   max-width: 1200px;
+  overflow: hidden;
 }
 .short-text {
   font-family: Calibri, Candara, "Segoe UI", Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.55;
   text-align: left;
   max-width: 260px;
-  max-height: 150px;
+  max-height: 160px;
   overflow: hidden;
   float: left;
-  margin: 33px 20px 0px;
+  margin: 30px 20px 0px;
   position: relative;
 }
 .short-text a:last-child {
