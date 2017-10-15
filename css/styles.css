@@ -32,17 +32,18 @@
 
 .wrapper {
   margin: 0 auto;
-  width: 1200px;
-  height: 128px;
+  max-width: 1200px;
+  width: 100%;
+  /*height: 128px;*/
   text-align: center;
   background-color: red;
   position: relative;
 }
 
-header {
+body > header {
   width: 100%;
   /*width: 1600px;*/
-  height: 128px;
+  height: 125px;
   background: blue;
   text-align: center;
   position: fixed;
@@ -74,7 +75,7 @@ h1 {
 h1 p:first-child {
   text-transform:lowercase;
   letter-spacing: 0.8pt;
-  font-family: 'Calibri';
+  font-family: Calibri, Candara, "Segoe UI", Arial, sans-serif;
   color: #fb9c06;
   position: relative;
   top: 1px;
@@ -127,7 +128,7 @@ figure > a {
 }
 
 nav figcaption {
-  font-family: 'Calibri';
+  font-family: Calibri, Candara, "Segoe UI", Arial, sans-serif;
   font-size: 22px;
   color: rgba(158,155,155,1);
   position: relative;
@@ -159,12 +160,71 @@ nav figcaption {
 
 main {
   background-color: yellow;
+  /*position: relative;*/
+  padding-top: 125px;
+}
+
+/*debug*/
+.slider {
+  background-color: green;
+}
+.slider .wrapper {
+  max-width: 1600px;
+}
+.slider header {
+  position: absolute;
+  top: 130px;
+  left: 200px;
+}
+h2 {
+  font-family: 'Bebas', 'Helvetica', sans-serif;
+  font-size: 37px;
+  text-transform:uppercase;
+  letter-spacing: 0.4pt;
+  word-spacing: 0.5pt;
+  display: inline;
   position: relative;
-  top: 128px;
+}
+h2:first-child {
+  color: rgba(251,156,6,1);
+  background-color: rgba(0,0,0,0.69);
+  border: solid rgba(0,0,0,0);
+  border-width: 9px 14px 9px 27px;
+  top: 10px;
+}
+h2:last-child {
+  color: rgba(110,109,107,1);
+  background-color: rgba(255,175,18,0.7);
+  border: solid rgba(255,175,18,0);
+  border-width: 14px 15px 15px 27px;
 }
 
 
-.slider {
-  height: 406px;
-  background-color: #fb9c06;
+/*8px (2+4+2) 70%top*/
+.slide::before {
+  display: block;
+  height: 6px;
+  content: "";
+}
+.slide::after {
+  display: block;
+  height: 6px;
+  content: "";
+}
+
+
+.slide img {
+  width: 100%;
+  max-width: 1600px;
+  height: 400px;
+  display: block;/*delete 4px in bottom*/
+}
+.slide {
+  text-align: center;
+}
+
+
+footer{
+  background-color: navy;
+  height: 84px;
 }
