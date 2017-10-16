@@ -34,8 +34,6 @@ body > header {
 .logo {
   width: 259px;
   height: 108px;
-/*  background-color: #FFFFFF;*/
-
   position: absolute;
   left: 16px;
   top: 5px;
@@ -187,11 +185,13 @@ h2:last-child {
   display: block;
   height: 6px;
   content: "";
+  background-color: rgba(255, 0, 0, 0.5);
 }
 .slide::after {
   display: block;
   height: 6px;
   content: "";
+  background-color: rgba(255, 0, 0, 0.5);
 }
 .slide img {
   width: 100%;
@@ -248,8 +248,8 @@ h2:last-child {
 .team {
   margin-top: 15px;
 }
-.team > header {
-
+.team  header {
+  margin-top: 38px;
 }
 h3 {
   /*border-bottom: 3px solid currentColor;*/
@@ -258,7 +258,6 @@ h3 {
   position: relative;
   letter-spacing: 0.8pt;
   left: 10px;
-  top: 23px;
   /*
   top: 36px;
   line-height: 0.7;
@@ -266,6 +265,7 @@ h3 {
   color: rgb(255, 156, 0);
   font-size: 40px;
   font-family: "StMarie-Thin";
+  font-weight: 400;
 }
 
 .avatar:last-child {
@@ -278,10 +278,42 @@ h3 {
   float: left;
   width: 400px;
   text-align: center;
+  position: relative;
 }
+.teammate {
+  font-family: Calibri-Light, Candara, "Segoe UI", Arial, sans-serif;
+  color: rgb(251, 156, 6);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.5pt;
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 23px;
+}
+.teammate span {
+  color: rgb(110, 109, 107);
+}
+.avatar:first-child {
+  left: -47px;
+}
+.avatar:last-child {
+  right: -52px;
+}
+.avatar:nth-child(0n+2) {
+  left: 17px;
+}
+/*
+.teammate:last-child {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.teammate:nth-child(0n+2) {
+  margin-right: : 20px;
+}
+*/
 .avatar img {
-  width: 295px;
-  height: 295px;
+  width: 315px;
+  height: 315px;
   border-radius: 50%;
   border: 10px solid rgb(255,181,63);
 }
@@ -291,7 +323,61 @@ h3 {
   font-size: 15px;
   text-align: left;
   max-width: 260px;
-  margin: 0px auto;
+  margin: 17px auto;
+  line-height: 1.5;
+}
+
+
+/*send message*/
+.message {
+  text-align: left;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.message label {
+  font-family: 'StMarie-Thin';
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(251, 156, 6);
+  display: block;
+  position: relative;
+  top: 35px;
+}
+.message p {
+  padding-top: 7px;
+  position: relative;
+  width: 100%;
+}
+.send-message {
+  margin-top: 22px;
+  margin-bottom: 50px;
+}
+.send-message h3 {
+  padding-left: 17px;
+}
+.message input {
+  height: 33px;
+  background-color: rgba(247, 246, 245, 0.92);
+  margin-left: 132px;
+  width: 100%;
+}
+input[type="textareas"] {
+  height: 88px;
+}
+
+.message p:last-child {
+  text-align: right;
+}
+input[type="submit"] {
+  width: 177px;
+  height: 50px;
+  /*border-bottom: 5px solid linear-gradient(to bottom, #fefcea, #f1da36);*/
+  font-family: 'StMarie-Thin';
+  font-size: 30px;
+  color: white;
+  background-color: rgb(251, 156, 6);
+  position: relative;
+  right: 30px;
 }
 
 
@@ -303,6 +389,11 @@ h3 {
 footer {
   width: 100%;
   height: 84px;
+  font-family: 'StMarie-Thin';
+  font-size: 33px;
+  letter-spacing: 1pt;
+  word-spacing: -4pt;/*realy??*/
+  color: white;
   background-color: rgb(251,156,6);
   position: absolute;
   bottom: 0px;
