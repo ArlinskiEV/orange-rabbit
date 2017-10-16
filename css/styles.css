@@ -134,7 +134,19 @@ nav figcaption {
   background-position: -453px -2px;
 }
 .home figcaption {
-  left: -25px;
+  left: -28px;
+}
+.about figcaption {
+  left: -16px;
+}
+.work figcaption {
+  left: -10px;
+}
+.blog figcaption {
+  left: -1px;
+}
+.contact figcaption {
+  left: 24px;
 }
 
 
@@ -181,17 +193,18 @@ h2:last-child {
 
 
 /*8px (2+4+2) 70%top*/
+
 .slide::before {
   display: block;
   height: 6px;
   content: "";
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(251, 156, 6, 0.7);
 }
 .slide::after {
   display: block;
   height: 6px;
   content: "";
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(251, 156, 6, 1);
 }
 .slide img {
   width: 100%;
@@ -214,7 +227,7 @@ h2:last-child {
   word-spacing: 1.5pt;
   text-align: left;
   max-width: 260px;
-  max-height: 160px;
+  max-height: 174px;
   overflow: hidden;
   float: left;
   margin: 30px 20px 0px;
@@ -237,6 +250,7 @@ h2:last-child {
 .content::after {
   content: "";
   display: block;
+  margin-top: 10px;
   height: 4px;
   background: linear-gradient(to bottom, #f1f1f1, #fdfdfd);
 }
@@ -249,23 +263,19 @@ h2:last-child {
   margin-top: 15px;
 }
 .team  header {
-  margin-top: 38px;
+  margin-top: -1px;
 }
 h3 {
-  /*border-bottom: 3px solid currentColor;*/
   text-decoration: underline;
   display: inline;
   position: relative;
   letter-spacing: 0.8pt;
   left: 10px;
-  /*
-  top: 36px;
-  line-height: 0.7;
-  */
   color: rgb(255, 156, 0);
   font-size: 40px;
   font-family: "StMarie-Thin";
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: bold;
 }
 
 .avatar:last-child {
@@ -302,20 +312,13 @@ h3 {
 .avatar:nth-child(0n+2) {
   left: 17px;
 }
-/*
-.teammate:last-child {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.teammate:nth-child(0n+2) {
-  margin-right: : 20px;
-}
-*/
+
+
 .avatar img {
   width: 315px;
   height: 315px;
   border-radius: 50%;
-  border: 10px solid rgb(255,181,63);
+  border: 9px solid rgb(255,181,63);
 }
 .avatar > p {
   font-family: Calibri-Light, Candara, "Segoe UI", Arial, sans-serif;
@@ -325,13 +328,15 @@ h3 {
   max-width: 260px;
   margin: 17px auto;
   line-height: 1.5;
+  position: relative;
+  left: 10px;
 }
 
 
 /*send message*/
 .message {
   text-align: left;
-  margin-top: 30px;
+  margin-top: 66px;
   overflow: hidden;
 }
 .message label {
@@ -340,27 +345,28 @@ h3 {
   font-weight: bold;
   color: rgb(251, 156, 6);
   display: block;
-  position: relative;
-  top: 35px;
+  position: absolute;
 }
 .message p {
-  padding-top: 7px;
+  padding-bottom: 36px;
   position: relative;
   width: 100%;
 }
 .send-message {
   margin-top: 22px;
-  margin-bottom: 50px;
+  margin-bottom: 2px;
 }
 .send-message h3 {
   padding-left: 17px;
 }
 .message input {
-  height: 33px;
   background-color: rgba(247, 246, 245, 0.92);
   margin-left: 132px;
   width: 100%;
+  box-shadow: inset 5px 3px 0px 0px rgba(198, 197, 197, 0.75);
+  height: 34px;
 }
+
 input[type="textareas"] {
   height: 88px;
 }
@@ -371,13 +377,15 @@ input[type="textareas"] {
 input[type="submit"] {
   width: 177px;
   height: 50px;
-  /*border-bottom: 5px solid linear-gradient(to bottom, #fefcea, #f1da36);*/
+  border-bottom: 3px solid rgb(204, 131, 15);
   font-family: 'StMarie-Thin';
+  box-shadow: none;
   font-size: 30px;
   color: white;
   background-color: rgb(251, 156, 6);
   position: relative;
   right: 30px;
+  top: -13px;
 }
 
 
@@ -385,10 +393,12 @@ input[type="submit"] {
 
 
 
-
+footer .wrapper {
+  margin-top: 12px;
+}
 footer {
   width: 100%;
-  height: 84px;
+  height: 73px;
   font-family: 'StMarie-Thin';
   font-size: 33px;
   letter-spacing: 1pt;
@@ -397,4 +407,6 @@ footer {
   background-color: rgb(251,156,6);
   position: absolute;
   bottom: 0px;
+  border-bottom: 3px solid rgb(204, 131, 15);
+  margin-bottom: 11px;
 }
